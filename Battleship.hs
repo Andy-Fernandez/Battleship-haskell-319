@@ -76,6 +76,7 @@ convertirCampoACadena campo barcos coordenada
     | snd coordenada <= tamanoCampo = "\n" ++ convertirCampoACadena campo barcos (1, snd coordenada + 1)
     | otherwise = []
 
+
 -- Mostrar el campo en el terminal
 imprimirCampo :: String -> Campo -> [Barco] -> IO ()
 imprimirCampo nombreJugador campo barcos = do
